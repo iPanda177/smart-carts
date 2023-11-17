@@ -1,6 +1,16 @@
 # Smart Carts - NestJS/React/PostgreSQL/MongoDB/WebSockets
 
-# Deploy
+Create, view, edit and reserve your
+customers cart for a more seamless shopping experience.
+Redefine how you interact with your customers shopping
+carts. This user-friendly app allows you to create, view,
+edit, and reserve your customers carts with five flexible
+levels of reservation durations. Automated email
+reminders keep your customers engaged and timely. Plus,
+with our robust analytics feature, you can understand your
+shoppers behavior and make data-driven decisions.
+Discover the ease and power today, and unlock a new
+level of customer engagement!
 
 [//]: # (```shell)
 
