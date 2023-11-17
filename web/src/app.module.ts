@@ -58,7 +58,7 @@ const STATIC_PATH =
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DB,
       entities: [Shop, Item, Customer, Cart, Analytics],
-      // synchronize: true,
+      synchronize: true,
       // TODO: Really? Please set just pattern, you don't need migrations import
       migrations: [migrations1685455045580],
       ssl: {

@@ -37,7 +37,7 @@ export default function SupportPage() {
         </Layout.Section>
       </Layout>
 
-      <FooterHelp>© Simplify Apps. All rights reserved.</FooterHelp>
+      <FooterHelp>© Simplify Apps. All rights reserved. Colossians 3:17</FooterHelp>
     </Page>
   );
 }

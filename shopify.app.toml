@@ -1,3 +1,34 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "better-carts-dev"
+client_id = "58bfb1bd0c554da7ee5f7b3bcedd6d7e"
+application_url = "https://andrii.ngrok.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "read_themes,write_themes,read_products,write_products,read_product_listings,read_orders,write_orders,read_assigned_fulfillment_orders,write_assigned_fulfillment_orders,read_customers,write_customers,read_draft_orders,write_draft_orders,read_inventory,write_inventory"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://andrii.ngrok.app/auth/callback",
+  "https://andrii.ngrok.app/auth/shopify/callback",
+  "https://andrii.ngrok.app/api/auth/callback",
+  "https://andrii.ngrok.app/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-04"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://811a-109-68-43-50.ngrok-free.app/storefront/mandatory/customers/redact"
+  customer_data_request_url = "https://811a-109-68-43-50.ngrok-free.app/storefront/mandatory/customers/data_request"
+  shop_deletion_url = "https://811a-109-68-43-50.ngrok-free.app/storefront/mandatory/shop/redact"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "better-carts-prod-test.myshopify.com"

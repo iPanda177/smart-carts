@@ -25,7 +25,7 @@ export default function cartsSummary() {
     >
       <Frame>
         <CartsTable></CartsTable>
-        <FooterHelp>© Simplify Apps. All rights reserved.</FooterHelp>
+        <FooterHelp>© Simplify Apps. All rights reserved. Colossians 3:17</FooterHelp>
       </Frame>
     </Page>
   );

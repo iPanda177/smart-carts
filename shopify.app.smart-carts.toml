@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Smart Carts"
+client_id = "7932e54b0d151d9f38928401d7140759"
+application_url = "https://better-carts-app-jif2w.ondigitalocean.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_themes,write_themes,read_products,write_products,read_product_listings,read_orders,write_orders,read_assigned_fulfillment_orders,write_assigned_fulfillment_orders,read_customers,write_customers,read_draft_orders,write_draft_orders,read_inventory,write_inventory"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://better-carts-app-jif2w.ondigitalocean.app/auth/callback",
+  "https://better-carts-app-jif2w.ondigitalocean.app/auth/shopify/callback",
+  "https://better-carts-app-jif2w.ondigitalocean.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://better-carts-app-jif2w.ondigitalocean.app/storefront/mandatory/customers/redact"
+  customer_data_request_url = "https://better-carts-app-jif2w.ondigitalocean.app/storefront/mandatory/customers/data_request"
+  shop_deletion_url = "https://better-carts-app-jif2w.ondigitalocean.app/storefront/mandatory/shop/redact"
+
+[pos]
+embedded = false
